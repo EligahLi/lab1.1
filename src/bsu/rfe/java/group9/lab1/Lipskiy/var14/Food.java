@@ -1,6 +1,6 @@
 package bsu.rfe.java.group9.lab1.Lipskiy.var14;
 
-public abstract class Food implements Consumable {
+public abstract class Food implements Consumable  {
 	
 	String name = null;
 	
@@ -13,7 +13,7 @@ public abstract class Food implements Consumable {
 		if (name==null || ((Food)arg0).name==null) return false; // иру 2
 			return name.equals(((Food)arg0).name); // иру 3
 	}
-	
+	 
 	public String toString() {
 		return name;
 	}
