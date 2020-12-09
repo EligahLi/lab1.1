@@ -21,6 +21,13 @@ public class MainApplication {
 					}
 			itemsSoFar++;
 		} 
+		
+		System.out.println("Consumed: ");
+		for (Food item: breakfast)
+		if (item!=null)
+		item.consume();
+		else
+		break;
 	
 		System.out.println("ַאגענאך:");
 		
@@ -32,7 +39,7 @@ public class MainApplication {
 			int counter=0;
 			for (Food item: breakfast) if (item!=null && item.equals(breakfast[i])) counter++;  //count number of items matching current one
 			
-			temp="Consume " + breakfast[i].toString() + " " + counter+ " רע.";
+			temp=breakfast[i].toString() + " " + counter+ " רע.";
             if(tempFinal.indexOf(temp)<0) tempFinal=tempFinal+temp+"\n";
 		}
  
